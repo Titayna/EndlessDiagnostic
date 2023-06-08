@@ -59,7 +59,7 @@ Un infirmier vous appelle en salle d'auscultation.
 Où est-ce que vous avez mal ? Au bas ventre ? C'est sûrement une simple infection urinaire, il ne faut pas venir aux urgences pour ça Madame ! 
 {Name("Emilia")}
 {CharacterIcon("Emilia")} 
-{CharAnimation("Casual1", "SURPISED")}
+{CharAnimation("Casual1", "SURPRISED")}
 Malgré votre surprise face à l'attitude de l'infirmer, vous expliquez que vous avez perdu connaissance suite à des douleurs terribles qui vous ont réveillé aux urgences. Désemparée par la situation, vous vous êtes inquiétée et vous êtes rendu aux urgences. 
 {Name("Infirmier")}
 {CharacterIcon("Infirmier")}
