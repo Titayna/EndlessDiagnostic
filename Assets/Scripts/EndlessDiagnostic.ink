@@ -30,7 +30,18 @@ EXTERNAL CharacterIcon(charNames)
 EXTERNAL CharAnimation(charName, amimName)
 
 
+-> Presentation
+
+=== Presentation ===
+{Name("Emilia")}
+{CharacterIcon("Emilia")}
+{CharAnimation("Casual1", "NEUTRAL")}
+
+test présentation
+
 -> ReveilACauseDesDouleurs
+
+
 
 
 === ReveilACauseDesDouleurs ===

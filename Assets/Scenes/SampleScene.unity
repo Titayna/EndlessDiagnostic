@@ -163,8 +163,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -389, y: -23.429003}
-  m_SizeDelta: {x: 106.0469, y: 96.1317}
+  m_AnchoredPosition: {x: -389.91, y: -26.909}
+  m_SizeDelta: {x: 77.1389, y: 112.0027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1885201
 CanvasRenderer:
@@ -433,7 +433,6 @@ GameObject:
   - component: {fileID: 877576700}
   - component: {fileID: 877576702}
   - component: {fileID: 877576701}
-  - component: {fileID: 877576703}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Finish
@@ -461,8 +460,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 1.5643e-10, y: 69}
-  m_SizeDelta: {x: 960, y: 175}
+  m_AnchoredPosition: {x: -10.621107, y: 83.5957}
+  m_SizeDelta: {x: 1015.7681, y: 244.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &877576701
 MonoBehaviour:
@@ -502,21 +501,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877576699}
   m_CullTransparentMesh: 1
---- !u!114 &877576703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877576699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.31612673, g: 0.5474949, b: 0.6037736, a: 1}
-  m_EffectDistance: {x: 6, y: 6}
-  m_UseGraphicAlpha: 1
 --- !u!1 &923315280
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +528,7 @@ RectTransform:
   m_GameObject: {fileID: 923315280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95581, y: 0.95581, z: 0.95581}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 877576700}
@@ -552,8 +536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.55}
-  m_AnchoredPosition: {x: -389, y: 53}
-  m_SizeDelta: {x: 143.99, y: 28.5}
+  m_AnchoredPosition: {x: -383, y: 47.41261}
+  m_SizeDelta: {x: 140.9656, y: 36.641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &923315282
 MonoBehaviour:
@@ -638,7 +622,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.0941467, y: 1.1809692, z: 0.40626526, w: -0.067970276}
+  m_margin: {x: 1.0941467, y: -34.97383, z: 12.504013, w: -0.067970276}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -801,7 +785,7 @@ RectTransform:
   m_GameObject: {fileID: 1290446800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0311711, y: 1.0311711, z: 1.0311711}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 877576700}
@@ -809,8 +793,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67.5878, y: -6.9194}
-  m_SizeDelta: {x: 775.1757, y: 129.1509}
+  m_AnchoredPosition: {x: 73.3562, y: -14.126}
+  m_SizeDelta: {x: 699.9263, y: 209.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1290446802
 MonoBehaviour:
@@ -835,9 +819,7 @@ MonoBehaviour:
   m_text: "I really like copypastas. I can truly appreciate the amount of creativity
     nestled into a big blob of text and recognize how artistic it really is. If you
     don\u2019t know what a copypasta is, it comes from the phrase \u201Ccopy and
-    paste\u201D which in computer terms refers to selecting an element (most likely
-    a large paragraph of text that is most likely senseless and rather lengthy) and
-    past it somewhere else."
+    paste\u201D which in computer terms refers to selecting an element."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -864,8 +846,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -876,12 +858,12 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
+  m_wordWrappingRatios: 0
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
@@ -900,7 +882,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 37.424408, y: 2.437622, z: 18.046875, w: 0.64297485}
+  m_margin: {x: -4.493987, y: 15.785011, z: -0.019469976, w: 17.717484}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -948,7 +930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 378, y: 174}
+  m_AnchoredPosition: {x: 132, y: 88}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305165791
@@ -971,7 +953,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 604, y: 111.3}
+  m_CellSize: {x: 500, y: 60}
   m_Spacing: {x: 0, y: 10.6}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -1410,7 +1392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694388104871467657, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 946.55
+      value: 940
       objectReference: {fileID: 0}
     - target: {fileID: 1694388104871467657, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
       propertyPath: m_LocalPosition.y
