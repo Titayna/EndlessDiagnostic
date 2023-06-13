@@ -22,8 +22,17 @@ public class ScriptReader : MonoBehaviour
     [SerializeField]
     private Button choiceBasePrefab;
 
+    [SerializeField]
+    private GridLayoutGroup HeartParent;
 
+    [SerializeField]
+    private GameObject HeartPrefab;
 
+    [SerializeField]
+    private GridLayoutGroup AgeParent;
+
+    [SerializeField]
+    private GameObject AgePrefab;
 
     void Start() 
     {
@@ -72,14 +81,42 @@ public class ScriptReader : MonoBehaviour
         _StoryScript.BindExternalFunction("Name", (string charName) => ChangeName(charName));
         _StoryScript.BindExternalFunction("CharacterIcon", (string charName) => ChangeCharacterIcon(charName));
         _StoryScript.BindExternalFunction("CharAnimation", (string charName, string amimName) => playCharacterAnim(charName, amimName));
+        _StoryScript.BindExternalFunction("Heart", (int heartNumber) => ChangeHeartNumber(heartNumber));
+       _StoryScript.BindExternalFunction("Age", (string ageText) => ChangeAgeText(ageText));
+
 
         DisplayNextLine();
 
         
     }
 
+    void ChangeHeartNumber(int heartNumber) // Changer nombre de vies
+    {
+        // Effacez tous les objets Heart précédemment créés
+        foreach (Transform child in HeartParent.transform)
+        {
+            Destroy(child.gameObject);
+        }
 
+        // Créez le nombre d'objets Heart spécifié
+        for (int i = 0; i < heartNumber; i++)
+        {
+            GameObject heart = Instantiate(HeartPrefab, HeartParent.transform);
+            // Faites ici toute autre modification nécessaire pour personnaliser chaque objet Heart créé
+        }
+    }
 
+    void ChangeAgeText(string ageText)
+    {
+        // Accédez au prefab Age
+        GameObject ageObject = Instantiate(AgePrefab, AgeParent.transform);
+        TMP_Text ageTextComponent = ageObject.GetComponent<TMP_Text>();
+
+        // Mettez à jour le texte du prefab
+        ageTextComponent.text = ageText;
+    }   
+
+    
 
     public void DisplayNextLine() // Afficher les lignes une à une
     {
@@ -191,5 +228,6 @@ public class ScriptReader : MonoBehaviour
 
         character.GetComponent<CharAnim>().CharacterMotion(animName);
     }
+
 
 }

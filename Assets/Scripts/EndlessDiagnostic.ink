@@ -20,14 +20,14 @@
 //      Épilogue
 
 
-//Déclaration des variables
-VAR mental_health = 100
 
 
 //Definition des variables externes
 EXTERNAL Name(charName)
 EXTERNAL CharacterIcon(charNames)
 EXTERNAL CharAnimation(charName, amimName)
+EXTERNAL Heart(heartNumber)
+EXTERNAL Age(ageText)
 
 
 //PRESENTATION
@@ -35,11 +35,13 @@ EXTERNAL CharAnimation(charName, amimName)
 -> Presentation
 
 === Presentation ===
+{Heart(5)}
+{Age(16)}
 {Name("Emilia")}
 {CharacterIcon("Emilia")}
 {CharAnimation("Casual1", "NEUTRAL")}
 
-<i>test présentation</i>
+<i>test présentation</i> #Heart:1 
     * Ecouter son histoire
 
 -> ReveilACauseDesDouleurs
