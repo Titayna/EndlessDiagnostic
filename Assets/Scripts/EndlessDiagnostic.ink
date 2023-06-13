@@ -30,6 +30,8 @@ EXTERNAL CharacterIcon(charNames)
 EXTERNAL CharAnimation(charName, amimName)
 
 
+//PRESENTATION
+
 -> Presentation
 
 === Presentation ===
@@ -37,12 +39,13 @@ EXTERNAL CharAnimation(charName, amimName)
 {CharacterIcon("Emilia")}
 {CharAnimation("Casual1", "NEUTRAL")}
 
-test présentation
+<i>test présentation</i>
+    * Ecouter son histoire
 
 -> ReveilACauseDesDouleurs
 
 
-
+//DEBUT DES DOULEURS
 
 === ReveilACauseDesDouleurs ===
 {Name("Emilia")}
@@ -67,16 +70,16 @@ Un infirmier vous appelle en salle d'auscultation.
 {CharacterIcon("Infirmier")}
 {CharAnimation("Casual1", "TIRED")}
 //RAJOUTER ITALIQUE POUR DIALOGUE EXTERNE 
-Où est-ce que vous avez mal ? Au bas ventre ? C'est sûrement une simple infection urinaire, il ne faut pas venir aux urgences pour ça Madame ! 
+<i>Où est-ce que vous avez mal ? Au bas ventre ? C'est sûrement une simple infection urinaire, il ne faut pas venir aux urgences pour ça Madame !</i>
 {Name("Emilia")}
 {CharacterIcon("Emilia")} 
 {CharAnimation("Casual1", "SURPRISED")}
 Malgré votre surprise face à l'attitude de l'infirmer, vous expliquez que vous avez perdu connaissance suite à des douleurs terribles qui vous ont réveillé aux urgences. Désemparée par la situation, vous vous êtes inquiétée et vous êtes rendu aux urgences. 
 {Name("Infirmier")}
 {CharacterIcon("Infirmier")}
-Mais vous n'avez plus mal maintenant, c'est que c'est bon, vous n'avez rien. Laissez-moi vérifier vos analyses. 
+<i>Mais vous n'avez plus mal maintenant, c'est que c'est bon, vous n'avez rien. Laissez-moi vérifier vos analyses.</i>
 {CharAnimation("Casual1", "ANGRY")}
-Ah vous voyez, une simple infection urinaire, il ne faut pas venir aux urgences pour ça. Rendez-vous chez votre médecin généraliste pour obtenir une ordonnance. Au revoir et ne refaites plus ça. 
+<i>Ah vous voyez, une simple infection urinaire, il ne faut pas venir aux urgences pour ça. Rendez-vous chez votre médecin généraliste pour obtenir une ordonnance. Au revoir et ne refaites plus ça.</i>
 {Name("Emilia")}
 {CharacterIcon("Emilia")}
 {CharAnimation("Casual1", "TIRED")}
@@ -89,7 +92,7 @@ Ah vous voyez, une simple infection urinaire, il ne faut pas venir aux urgences 
 {Name("Généraliste")}
 {CharacterIcon("Generaliste")}
 {CharAnimation("Casual1", "NEUTRAL")}
-Médecin : Je ne comprends pas ce qui a pu provoquer tout cela. Est-ce que vous avez des douleurs similaires à d'autres moments ? 
+<i>Je ne comprends pas ce qui a pu provoquer tout cela. Est-ce que vous avez des douleurs similaires à d'autres moments ?</i>
 {Name("Emilia")}
 {CharacterIcon("Emilia")}
 {CharAnimation("Casual1", "NEUTRAL")}
@@ -97,9 +100,9 @@ Vous expliquer que vous avez des douleurs similaires quand vous avez vos règles
 {Name("Généraliste")}
 {CharacterIcon("Generaliste")}
 {CharAnimation("Casual1", "ANGRY")}
-Ah bon, ça n'a pas l'air lié alors. Vous savez c'est normal d'avoir mal durant vos règles.
+<i>Ah bon, ça n'a pas l'air lié alors. Vous savez c'est normal d'avoir mal durant vos règles.</i>
 {CharAnimation("Casual1", "TIRED")}
-Vu vos symptômes situés vers le bas ventre, je vous propose de soit vous rendre chez votre Gynécologue habituel ou je peux vous faire une délégation pour un Médecin Urologue. 
+<i>Vu vos symptômes situés vers le bas ventre, je vous propose de soit vous rendre chez votre Gynécologue habituel ou je peux vous faire une délégation pour un Médecin Urologue. </i>
     * {not MedecinGynecologue} [Le médecin Gynécologue]
         -> MedecinGynecologue
     * {not MedecinUrologue} [Le médecin Urologue]
@@ -114,15 +117,15 @@ Vous êtes reçue par votre Gynécologue.
 {Name("Gynécologue")}
 {CharacterIcon("Gynecologue")}
 {CharAnimation("Casual1", "TIRED")}
-Gynécologue : Je ne suis pas sûre de ce que vous avez. Vous savez, les règles sont très souvent douloureuses chez mes patientes. Peut-être que vous devriez tout de même aller voir l'Urologue comme conseillé par votre médecin. 
+<i>Je ne suis pas sûre de ce que vous avez. Vous savez, les règles sont très souvent douloureuses chez mes patientes. Peut-être que vous devriez tout de même aller voir l'Urologue comme conseillé par votre médecin.</i>
 {Name("Gynécologue")}
 {CharacterIcon("Gynecologue")}
 {CharAnimation("Casual1", "INTRIGUED")}
-Gynécologue : Je vais quand même vous faire des tests pour l'endométriose. Comme il s'agit d'une maladie où du tissu utérin se développe à différents endroits dans le corps, cela pourrait expliquer vos règles douloureuses, mais pas les "crises" que vous décrivez. Je vous propose de faire une échographie. 
+<i>Je vais quand même vous faire des tests pour l'endométriose. Comme il s'agit d'une maladie où du tissu utérin se développe à différents endroits dans le corps, cela pourrait expliquer vos règles douloureuses, mais pas les "crises" que vous décrivez. Je vous propose de faire une échographie.</i>
 {Name("Gynécologue")}
 {CharacterIcon("Gynecologue")}
 {CharAnimation("Casual1", "INTRIGUED")}
-Gynécologue : Bon je ne vois strictement rien à l'imagerie. Cela n'exclut pas une endométriose, mais comme je ne vois pas d'inflammation ou de lésions, je ne vois pas de raison de vous prescrire une IRM qui permettrait de voir plus en profondeur. Vous savez, souffrir durant vos règles est normal. 
+<i>Bon je ne vois strictement rien à l'imagerie. Cela n'exclut pas une endométriose, mais comme je ne vois pas d'inflammation ou de lésions, je ne vois pas de raison de vous prescrire une IRM qui permettrait de voir plus en profondeur. Vous savez, souffrir durant vos règles est normal.</i>
 {Name("Emilia")}
 {CharacterIcon("Emilia")}
 {CharAnimation("Casual1", "CONFUSE")}
@@ -156,14 +159,14 @@ Vous êtes reçue par le médecin Urologue.
 {Name("Médecin Gynécologue")}
 {CharacterIcon("MedecinGynecologue")}
 {CharAnimation("Casual1", "TIRED")}
-Je ne suis pas sûre de ce que vous avez. 
+<i>Je ne suis pas sûre de ce que vous avez.</i>
 {CharAnimation("Casual1", "ANGRY")}
-Vous savez, les règles sont très souvent douloureuses chez mes patientes. Peut-être que vous devriez tout de même aller voir votre Gynécologue comme conseillé par votre médecin. 
+<i>Vous savez, les règles sont très souvent douloureuses chez mes patientes. Peut-être que vous devriez tout de même aller voir votre Gynécologue comme conseillé par votre médecin.</i>
 {CharAnimation("Casual1", "NEUTRAL")}
-Je peux tout de même vous faire une échographie. 
-Bon je ne vois strictement rien à l'échographie. Vous devriez en reparler avec votre Gynécologue, mais si vos douleurs apparaissent en dehors de vos règles, il n'y a aucune raison que ce soit lié à cela. 
+<i>Je peux tout de même vous faire une échographie.</i>
+<i>Bon je ne vois strictement rien à l'échographie. Vous devriez en reparler avec votre Gynécologue, mais si vos douleurs apparaissent en dehors de vos règles, il n'y a aucune raison que ce soit lié à cela.</i>
 {CharAnimation("Casual1", "ANGRY")}
-Personnellement je pense que vos douleurs sont psychosomatiques. Cela veut dire qu'elles sont créées par votre cerveau. Vous devriez vous déstresser et accepter que vos règles soient douloureuses. 
+<i>Personnellement je pense que vos douleurs sont psychosomatiques. Cela veut dire qu'elles sont créées par votre cerveau. Vous devriez vous déstresser et accepter que vos règles soient douloureuses.</i>
 {Name("Emilia")}
 {CharacterIcon("Emilia")}
 {CharAnimation("Casual1", "TIRED")}
@@ -209,7 +212,7 @@ En cherchant vos symptômes, vous ne trouvez aucune correspondance qui semble ex
             {CharacterIcon("Epilogue")}
             {CharAnimation("Casual1", "SAD")}
         Vous acceptez que vous ne connaîtrez sûrement jamais pas la raison de vos douleurs.
-        Il est estimé qu'environ 10% de la population féminine mondiale est touchée par l'endométriose, une maladie chronique pouvant présenter des symptômes gravement handicapants. Ce chiffre est considéré comme sous-estimé puisque le parcours de diagnostic de l'endométriose est extrêmement complexe et est estimé en moyenne à 5 à 7 ans, voire 10 ans. 
+        Il est estimé qu'environ 10% de la population féminine mondiale est touchée par l'endométriose, une maladie chronique pouvant présenter des symptômes gravement handicapants. Ce chiffre est considéré comme sous-estimé puisque le parcours de diagnostic de l'endométriose est exåtrêmement complexe et est estimé en moyenne à 5 à 7 ans, voire 10 ans. 
         Cela s'explique notamment par un manque de connaissance du personnel soignant dans son ensemble. De nombreux témoignages de patientes diagnostiquées font état d'une forme de mépris de la part de ces derniers qui, bien souvent, considère tout simplement que des menstruations douloureuses sont une normalité, peu importe le niveau de douleur et de handicap engendrés.
             -> END
 

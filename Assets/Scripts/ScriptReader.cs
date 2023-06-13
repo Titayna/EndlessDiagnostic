@@ -177,6 +177,8 @@ public class ScriptReader : MonoBehaviour
         var characterIconSprite = Resources.Load("CharacterIcons/" + charName) as Sprite;
         characterIcon.sprite = Resources.Load<Sprite>("CharacterIcons/" + charName);
     }
+
+    
     
 
 
