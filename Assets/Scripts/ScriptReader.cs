@@ -16,6 +16,7 @@ public class ScriptReader : MonoBehaviour
 
     public Image characterIcon;
 
+
     [SerializeField]
     private GridLayoutGroup choiceHolder;
 
@@ -33,6 +34,11 @@ public class ScriptReader : MonoBehaviour
 
     [SerializeField]
     private GameObject AgePrefab;
+
+
+
+
+
 
     void Start() 
     {
@@ -106,7 +112,10 @@ public class ScriptReader : MonoBehaviour
         }
     }
 
-    void ChangeAgeText(string ageText)
+
+
+
+    void ChangeAgeText(string ageText) // Changer l'age
     {
         // Accédez au prefab Age
         GameObject ageObject = Instantiate(AgePrefab, AgeParent.transform);
@@ -138,7 +147,6 @@ public class ScriptReader : MonoBehaviour
 
 
 
-
     private void DisplayChoices() // Checker s'il y a un choix // OK 
     {
         if (choiceHolder.GetComponentsInChildren<Button>().Length > 0) return; 
@@ -151,6 +159,7 @@ public class ScriptReader : MonoBehaviour
             button.onClick.AddListener(() => OnClickChoiceButton(choice));
         }
     }
+
 
 
 
@@ -178,6 +187,7 @@ public class ScriptReader : MonoBehaviour
         _StoryScript.ChooseChoiceIndex(choice.index); 
         RefreshChoiceView(); 
         DisplayNextLine();
+
 
     }
 

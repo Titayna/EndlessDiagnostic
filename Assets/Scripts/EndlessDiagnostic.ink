@@ -41,8 +41,12 @@ EXTERNAL Age(ageText)
 {CharacterIcon("Emilia")}
 {CharAnimation("Casual1", "NEUTRAL")}
 
-<i>test présentation</i> #Heart:1 
-    * Ecouter son histoire
+Appuyer sur la barre d'espace pour lancer l'histoire Temps de lecture : 20 minutes #Heart:1 
+
+
+Texte de présentation
+
+    * [Ecouter son histoire]
 
 -> ReveilACauseDesDouleurs
 
@@ -57,7 +61,7 @@ Vous vous réveillez en pleine nuit avec des douleurs indéfinissables au niveau
 Du mieux que vous pouvez, vous vous rendez dans la salle de bain pour chercher de l'eau. 
 Abasourdie par la douleur, vous renversez tout sur votre passage et vous réveillez vos parents. D'ici que quelqu'un arrive, vous vous êtes effondré sur le sol. 
 La décision est prise, vos parents décident de vous emmener au plus vite aux urgences les plus proches. 
-    * Rendez-vous aux urgences. 
+    * [Rendez-vous aux urgences]
         ->Urgences
 
 
@@ -85,7 +89,7 @@ Malgré votre surprise face à l'attitude de l'infirmer, vous expliquez que vous
 {Name("Emilia")}
 {CharacterIcon("Emilia")}
 {CharAnimation("Casual1", "TIRED")}
-    * Vous allez voir votre médecin généraliste. 
+    * [Vous allez voir votre médecin généraliste]
         ->MedecinGeneraliste
 
 
@@ -132,7 +136,7 @@ Vous êtes reçue par votre Gynécologue.
 {CharacterIcon("Emilia")}
 {CharAnimation("Casual1", "CONFUSE")}
 Êtes-vous satisfait du diagnostic qui vous a été donné ? 
-    * Oui.
+    * [Oui]
             {Name("Epilogue")}
             {CharacterIcon("Epilogue")}
             {CharAnimation("Casual1", "SAD")}
@@ -140,7 +144,7 @@ Vous êtes reçue par votre Gynécologue.
         Il est estimé qu'environ 10% de la population féminine mondiale est touchée par l'endométriose, une maladie chronique pouvant présenter des symptômes gravement handicapants. Ce chiffre est considéré comme sous-estimé puisque le parcours de diagnostic de l'endométriose est extrêmement complexe et est estimé en moyenne à 5 à 7 ans, voire 10 ans. 
         Cela s'explique notamment par un manque de connaissance du personnel soignant dans son ensemble. De nombreux témoignages de patientes diagnostiquées font état d'une forme de mépris de la part de ces derniers qui, bien souvent, considère tout simplement que des menstruations douloureuses sont une normalité, peu importe le niveau de douleur et de handicap engendrés.
             -> END
-    * Non, mais vous ne savez pas quoi faire. 
+    * [Non, mais vous ne savez pas quoi faire]
         ->ChoixRestantsGyn
 
 
@@ -148,7 +152,7 @@ Vous êtes reçue par votre Gynécologue.
 Vous pouvez toujours : 
     * {not MedecinUrologue} [Aller voir le médecin Urologue]
         ->MedecinUrologue
-    * Faire des recherches par vous-même sur l'endométriose. 
+    * [Faire des recherches par vous-même sur l'endométriose]
         ->RechercheEndometriose
 
 
@@ -190,7 +194,7 @@ Vous êtes reçue par le médecin Urologue.
 Vous pouvez toujours : 
     * {not MedecinGynecologue} [Aller voir le gynécologue]
         ->MedecinGynecologue
-    * Faire des recherches par vous-même.
+    * [Faire des recherches par vous-même]
         ->RechercheUrologue
 
 
