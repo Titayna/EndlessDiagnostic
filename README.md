@@ -8,7 +8,7 @@ This game was created on both Ink and Unity as part of the Interactive Fiction c
 ![StoryLine](Storyline.jpg)
 
 
-### The sources of the information used on endometriosis are as follows: 
+### The sources of the information about endometriosis used are as follows: 
 France 3 Occitanie. 2020. Ma thèse en 180 secondes : Oumaima El Mansouri. [Youtube video](https://www.youtube.com/watch?v=z62u2Io_wzs)
 
 La Nouvelle République.fr. 2022. « Les femmes touchées par l’endométriose sont ciblées par les groupes sectaires ». [24/11/2022](https://www.lanouvellerepublique.fr/a-la-une/les-femmes-touchees-par-l-endometriose-sont-ciblees-par-les-groupes-sectaires).
