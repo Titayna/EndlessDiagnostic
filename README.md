@@ -5,12 +5,15 @@ An interactive fiction about the endometriosis diagnostic journey and the diffic
 
 This game was created on both Ink and Unity as part of the Interactive Fiction course in the Masters in Digital Humanities at the University of Lausanne
 
-The sources of the information used on endometriosis are as follows: 
-Anon. 2020. Ma thèse en 180 secondes : Oumaima El Mansouri.
 
-Anon. 2022. « Les femmes touchées par l’endométriose sont ciblées par les groupes sectaires ». [24/11/2022](https://www.lanouvellerepublique.fr/a-la-une/les-femmes-touchees-par-l-endometriose-sont-ciblees-par-les-groupes-sectaires).
 
-Anon. s. d. « LUNA vous explique : le diagnostic de l’endométriose - Luna ». [Consulté 28 juin 2023](https://www.luna-endometriose.com/blog/endometriose/diagnostic-de-l-endometriose/).
+
+### The sources of the information used on endometriosis are as follows: 
+France 3 Occitanie. 2020. Ma thèse en 180 secondes : Oumaima El Mansouri. [Youtube video](https://www.youtube.com/watch?v=z62u2Io_wzs)
+
+La Nouvelle République.fr. 2022. « Les femmes touchées par l’endométriose sont ciblées par les groupes sectaires ». [24/11/2022](https://www.lanouvellerepublique.fr/a-la-une/les-femmes-touchees-par-l-endometriose-sont-ciblees-par-les-groupes-sectaires).
+
+LunaForHealth. s. d. « LUNA vous explique : le diagnostic de l’endométriose - Luna ». [Consulté 28 juin 2023](https://www.luna-endometriose.com/blog/endometriose/diagnostic-de-l-endometriose/).
 
 Castillo, Amanda. 2019. « Les maux des femmes sont sous-estimés par les médecins | Bilan ». [Consulté 28 juin 2023](https://www.bilan.ch/femmes-leaders/les-maux-des-femmes-sont-sous-estimes-par-les-medecins).
 
