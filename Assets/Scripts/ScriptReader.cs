@@ -16,7 +16,6 @@ public class ScriptReader : MonoBehaviour
 
     public Image characterIcon;
 
-
     [SerializeField]
     private GridLayoutGroup choiceHolder;
 
@@ -36,11 +35,7 @@ public class ScriptReader : MonoBehaviour
     private GameObject AgePrefab;
 
 
-
-
-
-
-    void Start() 
+    void Start() // Demarrer l'histoire
     {
         LoadStory();
 
@@ -54,8 +49,7 @@ public class ScriptReader : MonoBehaviour
     }
 
 
-
-    string getNextStoryBlock()
+    string getNextStoryBlock() // Avancer dans l'histoire 
     {
         string text = "";
 
@@ -68,16 +62,13 @@ public class ScriptReader : MonoBehaviour
     }
 
 
-
-    void Update()
+    void Update() //Appuyer sur la barre d'espace pour faire avancer les dialogues
     {
-        if (Input.GetKeyDown(KeyCode.Space)) //Appuyer sur la barre d'espace pour faire avancer les dialogues
+        if (Input.GetKeyDown(KeyCode.Space)) 
         {
             DisplayNextLine();
         }
     }
-
-
 
 
     void LoadStory() // Lier au fichier Inkle
@@ -88,13 +79,11 @@ public class ScriptReader : MonoBehaviour
         _StoryScript.BindExternalFunction("CharacterIcon", (string charName) => ChangeCharacterIcon(charName));
         _StoryScript.BindExternalFunction("CharAnimation", (string charName, string amimName) => playCharacterAnim(charName, amimName));
         _StoryScript.BindExternalFunction("Heart", (int heartNumber) => ChangeHeartNumber(heartNumber));
-       _StoryScript.BindExternalFunction("Age", (string ageText) => ChangeAgeText(ageText));
-
+        _StoryScript.BindExternalFunction("Age", (string ageText) => ChangeAgeText(ageText));
 
         DisplayNextLine();
-
-        
     }
+
 
     void ChangeHeartNumber(int heartNumber) // Changer nombre de vies
     {
@@ -108,15 +97,18 @@ public class ScriptReader : MonoBehaviour
         for (int i = 0; i < heartNumber; i++)
         {
             GameObject heart = Instantiate(HeartPrefab, HeartParent.transform);
-            // Faites ici toute autre modification nécessaire pour personnaliser chaque objet Heart créé
         }
     }
 
 
-
-
     void ChangeAgeText(string ageText) // Changer l'age
     {
+        //Effacer age précédent
+        foreach (Transform child in AgeParent.transform)
+        {
+            Destroy(child.gameObject);
+        }        
+
         // Accédez au prefab Age
         GameObject ageObject = Instantiate(AgePrefab, AgeParent.transform);
         TMP_Text ageTextComponent = ageObject.GetComponent<TMP_Text>();
@@ -125,7 +117,6 @@ public class ScriptReader : MonoBehaviour
         ageTextComponent.text = ageText;
     }   
 
-    
 
     public void DisplayNextLine() // Afficher les lignes une à une
     {
@@ -141,13 +132,12 @@ public class ScriptReader : MonoBehaviour
         }
         else 
         {
-            dialogueBox.text = "Fin de l'histoire."; // Dernière phrase !! A CHANGER 
+            dialogueBox.text = "End of story."; // Dernière phrase !! 
         }
     }
 
 
-
-    private void DisplayChoices() // Checker s'il y a un choix // OK 
+    private void DisplayChoices() // Checker s'il y a un choix
     {
         if (choiceHolder.GetComponentsInChildren<Button>().Length > 0) return; 
 
@@ -161,17 +151,11 @@ public class ScriptReader : MonoBehaviour
     }
 
 
-
-
-
-    Button CreateChoiceButton(string text) // Créer un bouton choix // OK 
+    Button CreateChoiceButton(string text) // Créer un bouton choix
     {
-
-        //var choiceButton = Instantiate(choiceBasePrefab);
         Button choiceButton = Instantiate(choiceBasePrefab) as Button;
         choiceButton.transform.SetParent(choiceHolder.transform, false); 
 
-        //var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
         TMP_Text buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
         buttonText.text = text;
 
@@ -180,20 +164,15 @@ public class ScriptReader : MonoBehaviour
     }
 
 
-
-
-    void OnClickChoiceButton(Choice choice) // Continuer l'histoire selon le choix // OK 
+    void OnClickChoiceButton(Choice choice) // Continuer l'histoire selon le choix
     {
         _StoryScript.ChooseChoiceIndex(choice.index); 
         RefreshChoiceView(); 
         DisplayNextLine();
-
-
     }
 
 
-
-    void RefreshChoiceView() // Supprimer le bouton si l'histoire continue sans // OK 
+    void RefreshChoiceView() // Supprimer le bouton si l'histoire continue sans
     {
 
         if (choiceHolder != null) 
@@ -203,10 +182,7 @@ public class ScriptReader : MonoBehaviour
                 Destroy(button.gameObject);
            }
         }
-
     }
-
-
 
 
     public void ChangeName(string name) // Changer le nom des charactères qui parlent 
@@ -217,17 +193,11 @@ public class ScriptReader : MonoBehaviour
     }
 
 
-
-
     public void ChangeCharacterIcon(string charName) // Changer l'icone des charactères 
     {
         var characterIconSprite = Resources.Load("CharacterIcons/" + charName) as Sprite;
         characterIcon.sprite = Resources.Load<Sprite>("CharacterIcons/" + charName);
     }
-
-    
-    
-
 
 
     public void playCharacterAnim (string charName, string animName) // Ajouter des expressions au joueur
@@ -238,6 +208,5 @@ public class ScriptReader : MonoBehaviour
 
         character.GetComponent<CharAnim>().CharacterMotion(animName);
     }
-
 
 }
