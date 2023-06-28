@@ -5,7 +5,7 @@ An interactive fiction about the endometriosis diagnostic journey and the diffic
 
 This game was created on both Ink and Unity as part of the Interactive Fiction course in the Masters in Digital Humanities at the University of Lausanne
 
-
+![StoryLine](Storyline.jpg)
 
 
 ### The sources of the information used on endometriosis are as follows: 
