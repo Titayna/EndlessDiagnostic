@@ -1,3 +1,13 @@
 # EndlessDiagnostic
+An interactive fiction about the endometriosis diagnostic journey and the difficulties encountered by patients in dealing with medical staff. 
 
-https://titayna.itch.io/endlessdiagnostic
+## [You can play here.](https://titayna.itch.io/endlessdiagnostic)
+
+This game was created on both Ink and Unity as part of the Interactive Fiction course in the Masters in Digital Humanities at the University of Lausanne
+
+The sources of the information used on endometriosis are as follows: 
+Anon. 2020. Ma thèse en 180 secondes : Oumaima El Mansouri.
+Anon. 2022. « Les femmes touchées par l’endométriose sont ciblées par les groupes sectaires ». [24/11/2022](https://www.lanouvellerepublique.fr/a-la-une/les-femmes-touchees-par-l-endometriose-sont-ciblees-par-les-groupes-sectaires).
+Anon. s. d. « LUNA vous explique : le diagnostic de l’endométriose - Luna ». [Consulté 28 juin 2023](https://www.luna-endometriose.com/blog/endometriose/diagnostic-de-l-endometriose/).
+Castillo, Amanda. 2019. « Les maux des femmes sont sous-estimés par les médecins | Bilan ». [Consulté 28 juin 2023](https://www.bilan.ch/femmes-leaders/les-maux-des-femmes-sont-sous-estimes-par-les-medecins).
+Cox, Helen, Lorraine Henderson, Natalie Andersen, Glenda Cagliarini, et Chantal Ski. 2003. « Focus Group Study of Endometriosis: Struggle, Loss and the Medical Merry-Go-Round ». International Journal of Nursing Practice 9(1):2‑9. [doi: 10.1046/j.1440-172X.2003.00396.x.](https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1440-172X.2003.00396.x)
