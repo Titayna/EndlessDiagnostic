@@ -3,7 +3,7 @@ An interactive fiction about the endometriosis diagnostic journey and the diffic
 
 # [You can play here.](https://titayna.itch.io/endlessdiagnostic)
 
-This game was created on both Ink and Unity as part of the Interactive Fiction course in the Masters in Digital Humanities at the University of Lausanne
+This game was created on both Ink and Unity as part of the [Interactive Fiction course](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=88165&v_langue=fr) in the Masters in [Digital Humanities at the University of Lausanne](https://www.unil.ch/formations/en/home/menuinst/masters/humanites-numeriques.html).
 
 ![StoryLine](Storyline.jpg)
 
