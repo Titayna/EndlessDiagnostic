@@ -1,7 +1,7 @@
 # EndlessDiagnostic
 An interactive fiction about the endometriosis diagnostic journey and the difficulties encountered by patients in dealing with medical staff. 
 
-# [You can play here.](https://titayna.itch.io/endlessdiagnostic) ## ONLY WORKS ON SAFARI NAVIGATOR AS FOR NOW
+# [You can play here (you need to use Safari navigator as for now](https://titayna.itch.io/endlessdiagnostic)
 
 This game was created on both Ink and Unity as part of the [Interactive Fiction course](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=88165&v_langue=fr) in the Masters in [Digital Humanities at the University of Lausanne](https://www.unil.ch/formations/en/home/menuinst/masters/humanites-numeriques.html).
 
